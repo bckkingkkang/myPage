@@ -325,7 +325,7 @@
 		}
 		return sLiTag;
     }
-    
+ 
     /**
      * HTML5 DragAndDrop으로 사진을 추가하고, 확인버튼을 누른 경우에 동작한다.
      * @return
@@ -334,7 +334,9 @@
     	var tempFile,
     		sUploadURL;
     	
-    	sUploadURL= 'file_uploader_html5.jsp'; 	//upload URL
+    	//sUploadURL= 'file_uploader_html5.jsp'; 	//upload URL
+    	//jsp 페이지에 요청하던 요청경로를 SmartEditorController 에 요청을 하도록 수정한다.
+    	sUploadURL="/boot07/editor_upload";
     	
     	//파일을 하나씩 보내고, 결과를 받음.
     	for(var j=0, k=0; j < nImageInfoCnt; j++) {

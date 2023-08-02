@@ -22,7 +22,7 @@ public class GalleryServiceImpl implements GalleryService{
 	private GalleryDao dao;
 	
 	// 파일 저장로
-	@Value("${file.location")
+	@Value("${file.location}")
 	private String fileLocation;
 	
 	@Override
